@@ -1,0 +1,208 @@
+/* 登录界面大图 */
+.denglu{
+    width: 100%;
+}
+
+.denglu {
+    float: left;
+    height: 700px;
+    background: url(../images/img_01.jpg) no-repeat center center;
+}
+
+.denglu .denglu_nr {
+    width: 1180px;
+    margin: auto;
+    height: 700px;
+    background: url(../images/img_01.jpg) no-repeat center center;
+}
+
+.denglu .denglu_nr .denglu_box {
+    width: 510px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #fff;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    margin-top: 110px;
+    float: right;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom {
+    float: left;
+    width: 410px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_one {
+    width: 410px;
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_one h1 {
+    float: left;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    font-size: 32px;
+    margin-left: 133px;
+    color: #577fbb;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_one span {
+    float: right;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 22px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_one span a:hover{
+    color: rgb(10, 109, 148);
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two {
+    width: 410px;
+    margin-top: 20px;
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two .input_zhanghu {
+    width: 410px;
+    height: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 26px;
+    font-size: 14px;
+    background: url(../images/img_02.jpg) no-repeat center center;
+    border: none;
+    text-indent: 50px;
+    color: #666;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two .dl_box_yincang {
+    margin-top: 5px;
+    color: #ff0000;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two .input_mima {
+    width: 410px;
+    margin-top: 20px;
+    font-size: 14px;
+    height: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 26px;
+    background: url(../images/img_03.jpg) no-repeat center center;
+    border: none;
+    text-indent: 50px;
+    color: #666;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two .dl_box_yincang img {
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_two .dl_box_yincang span {
+    float: left;
+    margin-left: 5px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_three {
+    margin-top: 20px;
+    width: 410px;
+    float: left;
+    color: #333;
+    font-size: 14px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_three .input_checkbox {
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_three .span1 {
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_three .span2 {
+    float: right;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_three .span2 a:hover{
+    color: rgb(10, 109, 148);
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_four {
+    width: 410px;
+    margin-top: 20px;
+    float: left;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_four .input_button {
+    width: 410px;
+    background: #577fbb;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    height: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_five {
+    width: 410px;
+    float: left;
+    margin-top: 20px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_five p {
+    width: 410px;
+    background: url(../images/img_09.jpg) no-repeat center center;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 18px;
+}
+
+.denglu .denglu_nr .denglu_box .dl_box_bottom .dl_box_five a {
+    width: 38px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.denglu_qq {
+    margin-left: 53px;
+    background: url(../images/img_04_1.png) no-repeat;
+}
+.denglu_qq:hover{
+    background: url(../images/img_04_3.png) no-repeat;
+}
+
+
+.denglu_weixin {
+    margin-left: 48px;
+    background: url(../images/img_05_2.png) no-repeat;
+}
+
+.denglu_weixin:hover{
+    background: url(../images/img_05_1.png) no-repeat;
+}
+.denglu_weibo {
+    margin-left: 53px;
+    background: url(../images/img_06_2.png) no-repeat;
+}
+
+.denglu_weibo:hover{
+    background: url(../images/img_06_1.png) no-repeat;
+}
+.denglu_zhifubao {
+    margin-left: 50px;
+    background: url(../images/img_07_2.png) no-repeat;
+}
+
+.denglu_zhifubao:hover{
+    background: url(../images/img_07_1.png) no-repeat;
+}

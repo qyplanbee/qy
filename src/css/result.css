@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* 重置样式表 */
+html,body,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h5,h6,form,fieldset,legend,img,input{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+/* 字体默认16px  去除加粗 */
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* 去除列表样式 */
+ul,ol,li{
+    list-style: none;
+}
+
+/* 去除默认倾斜 */
+i,em{
+    font-style: normal;
+}
+
+/* 去除默认下划线 */
+a,u{
+    text-decoration: none ;
+}
+
+/* 去除默认加粗 */
+b,strong{
+    font-weight: normal;
+}
+
+/* 去除img默认间距 */
+img,iframe{
+    border: none;
+}
+
+/* 将img转为块元素 */
+img{
+    display: block;
+}
+
+/* inpute默认聚焦蓝色边框 */
+input{
+    outline: none;
+}
+
+/* 禁止用户拖拽  */
+textarea{
+    resize: none;
+}
+
+
+
+/* 自己封装一套类名 */
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+.border_none{
+    border: none;
+}
+
+.bg_none{
+    background: none !important;
+}
+
+/* 文本溢出隐藏省略号 */
+.text_ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 万能清除法 */
+.clear_fix::after{
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* 浮动层级 */
+.clear_fix{
+    zoom: 1;
+}
+
+/* 内容文本字体大小 */
+.font_20{
+    font-size: 20px;
+}
+p{
+    margin: 0 !important;
+    padding: 0;
+}
+h1{
+    margin: 0 !important;
+    padding: 0;
+}
+h3{
+    margin: 0 !important;
+    padding: 0;
+}
+.hide{
+    display: none ;
+}
+
+body {
+    font-family: 宋体;
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+a {
+    font-size: 12px;
+    color: #333;
+   /*  text-decoration: none; */
+}
+li{
+    font-size: 12px;
+}

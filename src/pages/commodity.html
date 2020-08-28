@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/public2.css">
+    <link rel="stylesheet" href="../css/commodity.css">
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../js/public.js"></script>
+</head>
+<body>
+     <!-- 头部 -->
+     <div class="header">
+        <div class="header_nr">
+            <div class="header_left">
+                <ul>
+                        <li>您好，欢迎光临佐卡伊珠宝网！</li>
+                        <li><a href="javascript:void(0)" rel="nofollow">登录</a></li>
+                        <li><a href="javascript:void(0)" rel="nofollow">注册</a></li>
+                    <li><a href="#" id="addFav" rel="nofollow">收藏佐卡伊</a></li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <div class="header_r_zuo">
+                    <ul>
+                        <li>
+                            <div class="drop_nav tt2"><a href="javascript:void(0)" target="_blank" rel="nofollow">实体店</a>
+                            </div>
+                            <div class="drop_nav_content" style="display: none; margin-top: 30px;" id="drop_nav_contentt"><a target="_blank" href="http://www.zocai.com/offline/guangzhoutianhecheng.html" title="广州天河城店">广东广州天河城店</a><a target="_blank" href="http://www.zocai.com/offline/wujiaochang.html" title="上海五角场万达店">上海上海五角场万达店</a><a target="_blank" href="http://www.zocai.com/offline/xinyangxinmate.html" title="信阳新玛特店">河南信阳新玛特店</a><a target="_blank" href="" title="郑州丹尼斯大卫城店">河南郑州丹尼斯大卫城店</a><a target="_blank" href="http://www.zocai.com/offline/nanyangdian.html" title="南阳新田360购物广场店">河南南阳新田360购物广场店</a><a target="_blank" href="http://www.zocai.com/offline/taiyangbaihuodian.html" title="深圳东门太阳百货店">广东深圳东门太阳百货店</a><a target="_blank" href="http://www.zocai.com/offline/yitianjiari.html" title="深圳益田假日广场店">广东深圳益田假日广场店</a><a target="_blank" href="http://www.zocai.com/offline/zhuoyuezhongxindian.html" title="卓悦中心店">广东卓悦中心店</a><a target="_blank" href="http://www.zocai.com/offline/hangzhouwulin.html" title="杭州武林店">浙江杭州武林店</a><a target="_blank" href="http://www.zocai.com/offline/dongyangxinguangtian.html" title="东阳新光天地店">浙江东阳新光天地店</a><a target="_blank" href="http://www.zocai.com/offline/wenliyaoda.html" title="台州温岭锦江店">浙江台州温岭锦江店</a><a target="_blank" href="http://www.zocai.com/offline/fuqing.html" title="福清一拂店">福建福清一拂店</a><a target="_blank" href="http://www.zocai.com/offline/wuhanhongshandian.html" title="武汉银泰创意城旗舰店">湖北武汉银泰创意城旗舰店</a><a target="_blank" href="http://www.zocai.com/offline/laizhou.html" title="山东莱州振华商厦店">山东山东莱州振华商厦店</a><a target="_blank" href="http://www.zocai.com/offline/pingdingshan.html" title="平顶山丹尼斯店">河南平顶山丹尼斯店</a><a target="_blank" href="http://www.zocai.com/offline/fuqingwanda.html" title="福清万达店">福建福清万达店</a><a target="_blank" href="http://www.zocai.com/offline/yidu.html" title="宜都雅斯国际广场店">湖北宜都雅斯国际广场店</a><a target="_blank" href="http://www.zocai.com/offline/longyanwanbao.html" title="龙岩新罗万宝店">福建龙岩新罗万宝店</a><a target="_blank" href="http://www.zocai.com/offline/qingdaohuangdao.html" title="青岛黄岛长江店">山东青岛黄岛长江店</a><a target="_blank" href="http://www.zocai.com/offline/fuyang.html" title="阜阳颍州万达店">安徽阜阳颍州万达店</a><a target="_blank" href="http://www.zocai.com/offline/xianxinshijiebaihuo.html" title="西安钟楼新世界百货店">陕西西安钟楼新世界百货店</a><a target="_blank" href="http://www.zocai.com/offline/bangbuwandadian.html" title="蚌埠蚌山万达店">安徽蚌埠蚌山万达店</a><a target="_blank" href="http://www.zocai.com/offline/weihailetian.html" title="威海乐天店">山东威海乐天店</a><a target="_blank" href="http://www.zocai.com/offline/yantaxiaozhai.html" title="西安雁塔小寨店">陕西西安雁塔小寨店</a><a target="_blank" href="http://www.zocai.com/offline/xuchanggulou.html" title="许昌鼓楼广场店">河南许昌鼓楼广场店</a><a target="_blank" href="http://www.zocai.com/offline/tianjintanggudian.html" title="天津塘沽中原店">天津天津塘沽中原店</a><a target="_blank" href="http://www.zocai.com/offline/zhangchunnanguandian.html" title="长春南关亚泰富苑店">吉林长春南关亚泰富苑店</a><a target="_blank" href="http://www.zocai.com/offline/lijiacunwanda.html" title="西安李家村万达店">陕西西安李家村万达店</a><a target="_blank" href="http://www.zocai.com/offline/zaozhuang.html" title="枣庄中央广场店">山东枣庄中央广场店</a><a target="_blank" href="http://www.zocai.com/offline/wendeng.html" title="文登利群店">山东文登利群店</a><a target="_blank" href="http://www.zocai.com/offline/caifuguangchang.html" title="阜阳颍泉财富广场店">安徽阜阳颍泉财富广场店</a><a target="_blank" href="http://www.zocai.com/offline/laiwuluzhong.html" title="莱芜鲁中东大街店">山东莱芜鲁中东大街店</a><a target="_blank" href="http://www.zocai.com/offline/huaibeijinying.html" title="安徽淮北金鹰国际店">安徽安徽淮北金鹰国际店</a><a target="_blank" href="http://www.zocai.com/offline/neimengguchifeng.html" title="内蒙古赤峰店">内蒙古内蒙古赤峰店</a><a target="_blank" href="http://www.zocai.com/offline/saiping.html" title="吉林四平铁西店">吉林吉林四平铁西店</a><a target="_blank" href="http://www.zocai.com/offline/hulunberlongfengdian.html" title="龙凤新天地购物广场店">内蒙古龙凤新天地购物广场店</a><a target="_blank" href="http://www.zocai.com/offline/ningboerbai.html" title="宁波第二百货店">浙江宁波第二百货店</a><a target="_blank" href="http://www.zocai.com/offline/jiayuguanxinhuadian.html" title="甘肃嘉峪关店">甘肃甘肃嘉峪关店</a><a target="_blank" href="http://www.zocai.com/offline/yongzhouqiyang.html" title="永州祁阳店">湖南永州祁阳店</a><a target="_blank" href="http://www.zocai.com/offline/hulunbeier.html" title="呼伦贝尔店">内蒙古呼伦贝尔店</a><a target="_blank" href="http://www.zocai.com/offline/pizhouxinsu.html" title="邳州新苏广场店">江苏邳州新苏广场店</a><a target="_blank" href="http://www.zocai.com/offline/hangzhoudayuecheng.html" title="杭州大悦城店">浙江杭州大悦城店</a><a target="_blank" href="http://www.zocai.com/offline/chifengwucaicheng.html" title="赤峰五彩城购物中心店">内蒙古赤峰五彩城购物中心店</a><a target="_blank" href="http://www.zocai.com/offline/yongchengjinboda.html" title="商丘永城金博大店">河南商丘永城金博大店</a><a target="_blank" href="http://www.zocai.com/offline/longzhimeng.html" title="上海中山公园龙之梦店">上海上海中山公园龙之梦店</a><a target="_blank" href="http://www.zocai.com/offline/balinzuoqi.html" title="内蒙古赤峰巴林左旗店">内蒙古内蒙古赤峰巴林左旗店</a><a target="_blank" href="http://www.zocai.com/offline/chongqingtianjie.html" title="重庆龙湖时代天街2店">重庆重庆龙湖时代天街2店</a><a target="_blank" href="http://www.zocai.com/offline/yuanyangcheng.html" title="唐山远洋城店">河北唐山远洋城店</a><a target="_blank" href="http://www.zocai.com/offline/tangshanleitai.html" title="唐山勒泰店">河北唐山勒泰店</a><a target="_blank" href="http://www.zocai.com/offline/jinyuangouwuzhongxin.html" title="唐山遵化店">河北唐山遵化店</a><a target="_blank" href="http://www.zocai.com/offline/baodingxiantianxia.html" title="保定先天下店">河北保定先天下店</a><a target="_blank" href="http://www.zocai.com/offline/gaoping.html" title="山西高平红旗广场店">山西山西高平红旗广场店</a><a target="_blank" href="http://www.zocai.com/offline/shanghaihuanqiu.html" title="上海环球港店">上海上海环球港店</a><a target="_blank" href="http://www.zocai.com/offline/yiwuqijiandian.html" title="义乌工人西路旗舰店">浙江义乌工人西路旗舰店</a><a target="_blank" href="http://www.zocai.com/offline/xiandayuecheng.html" title="西安大悦城店">陕西西安大悦城店</a><a target="_blank" href="http://www.zocai.com/offline/huizhou.html" title="惠州港惠新天地店">广东惠州港惠新天地店</a><a target="_blank" href="http://www.zocai.com/offline/rizhaowanxianghui.html" title="日照万象汇店">山东日照万象汇店</a><a target="_blank" href="http://www.zocai.com/offline/wuyueguangchang.html" title="桐乡吾悦广场店">浙江桐乡吾悦广场店</a><a target="_blank" href="http://www.zocai.com/offline/shanghaidawanbaihuo.html" title="上海新世界大丸百货店">上海上海新世界大丸百货店</a><a target="_blank" href="http://www.zocai.com/offline/nanchangwangfujing.html" title="南昌王府井购物中心店">江西南昌王府井购物中心店</a><a target="_blank" href="http://www.zocai.com/offline/yanshamall.html" title="北京金源燕莎MALL店">北京北京金源燕莎MALL店</a><a target="_blank" href="http://www.zocai.com/offline/zhujixiongfeng.html" title="诸暨雄风新天地店">浙江诸暨雄风新天地店</a><a target="_blank" href="http://www.zocai.com/offline/xinzhoutiansenhui.html" title="忻州田森汇购物中心店">山西忻州田森汇购物中心店</a><a target="_blank" href="http://www.zocai.com/offline/jiayuguanbaisheng.html" title="嘉峪关百盛购物广场店">甘肃嘉峪关百盛购物广场店</a><a target="_blank" href="http://www.zocai.com/offline/xinyanggushi.html" title="信阳固始店">河南信阳固始店</a><a target="_blank" href="" title="天津恒隆广场店">天津天津恒隆广场店</a><a target="_blank" href="http://www.zocai.com/offline/jiulongcheng.html" title="九龙城购物中心店">山东九龙城购物中心店</a><a target="_blank" href="http://www.zocai.com/offline/shiluguojidian.html" title="苏州石路国际店">江苏苏州石路国际店</a><a target="_blank" href="http://www.zocai.com/offline/hailaerdian.html" title="海拉尔大赏友谊店">内蒙古海拉尔大赏友谊店</a><a target="_blank" href="http://www.zocai.com/offline/yoyoparkdian.html" title="郑州yoyopark购物中心店">河南郑州yoyopark购物中心店</a><a target="_blank" href="http://www.zocai.com/offline/guangzhouhuadudian.html" title="广州花都店">广东广州花都店</a><a target="_blank" href="http://www.zocai.com/offline/wuyueguangchangdian.html" title="义乌吾悦广场店">浙江义乌吾悦广场店</a><a target="_blank" href="http://www.zocai.com/offline/lanzhouhualiandian.html" title="兰州东方红购物中心店">甘肃省兰州东方红购物中心店</a><div class="clear"></div></div>
+                        </li>
+                        <li>
+                            <div class="drop_nav"><a href="javascript:void(0)r" rel="nofollow">会员中心</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="drop_nav"><a style="cursor:pointer" rel="nofollow">信息中心</a>
+                            </div>
+                            <div class="drop_nav_content " style="display: none; margin-top: 30px;">
+                                <a target="_blank" href="javascript:void(0)">珠宝资讯</a>
+                                <a target="_blank" href="javascript:void(0)">珠宝学院</a>
+                                <a target="_blank" href="javascript:void(0)">珠宝百科</a>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="drop_nav"><a href="" target="_blank" rel="nofollow">关注微博</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_r_you">
+                    <ul class="ul_two">
+                        <li>
+                            <a rel="nofollow" href="javascript:void(0)" class="drop_nav">
+                                <img src="http://res.zocai.com/Images/Global/Head2/head_4.png" width="22" height="22"></a>
+                            
+                        </li>
+                        <li><b class="hotline">全国服务热线：400-602-0199</b></li>
+                        
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部logo -->
+    <div class="logo">
+        <div class="logo_nr"><a href="javascript:void(0)" title="佐卡伊珠宝网">
+            <img src="http://res.zocai.com/Home/Global/top15/images/top_02.jpg" alt="佐卡伊珠宝网">
+        </a
+        ></div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="newnav">
+        <div class="newnav_nr">
+            <ul>
+                <li>
+                    <div class="drop_nav">
+                        <a href="javascript:void(0)" class="">珠宝商城</a>
+                    </div>
+                </li>
+                <li data="diamond">
+                    <div class="drop_nav">
+                        <a target="_blank" href="javascript:void(0)" class="">钻石定制</a>
+                    </div>
+                    <div class="drop_nav_content " style="margin-top: 40px; display: none;">
+                        <div class="drop_nav_content_top" style="left: 91.5px;"></div>
+                        <div class="drop_nav_content_left">
+                            <a target="_blank" href="javascript:void(0)" title="30分以下"><span>30分钻石</span><span class="ico"></span></a>
+                            <a target="_blank" href="javascript:void(0)" title="50分钻石"><span>50分钻石</span><span class="ico"></span></a>
+                            <a target="_blank" href="javascript:void(0)" title="70分钻石"><span>70分钻石</span><span class="ico"></span></a>
+                            <a target="_blank" href="javascript:void(0)" title="1克拉钻石"><span>1克拉钻石</span><span class="ico"></span></a>
+                            <a target="_blank" href="javascript:void(0)" title="2克拉钻石"><span>2克拉钻石</span><span class="ico"></span></a>
+                            <a target="_blank" href="javascript:void(0)" title="5克拉钻石"><span>5克拉钻石</span><span class="ico"></span></a>
+                        </div>
+                        <div class="drop_nav_content_center">
+                            <a target="_blank" href="javascript:void(0)">
+                                <img src="http://res.zocai.com/images/global/nav_img_diamond.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="drop_nav_content_right">
+                            <p>
+                                <b>精彩活动</b>
+                            </p>
+                            <p>·<a target="_blank" href="javascript:void(0)" title="盛世典藏，一生臻爱，精品钻石专场">盛世典藏，一生臻爱，精品钻石专场</a></p>
+                            <p>·<a target="_blank" href="javascript:void(0)" title="美不止一面，精品异形钻专场">美不止一面，精品异形钻专场</a></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li data="ring">
+                    <div class="drop_nav">
+                        <a href="javascript:void(0)" class="" target="_blank">婚戒</a>
+                    </div>
+                    <div class="drop_nav_content " style="margin-top: 40px; display: none;">
+                        <div class="drop_nav_content_top" style="left: 91.5px;"></div>
+                        <div class="drop_nav_content_left">
+                            <a target="_blank" href="javascript:void(0)" title="女戒">
+                                <span>女戒</span>
+                                <span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="铂金女戒">铂金</a>
+                                <a target="_blank" href="javascript:void(0)" title="钻石女戒">钻石</a>
+                                <a target="_blank" href="javascript:void(0)" title="K金女戒">K金</a>
+                                <a target="_blank" href="javascript:void(0)" title="珍珠女戒">珍珠</a>
+                                <a target="_blank" href="javascript:void(0)" title="宝石女戒">宝石</a>
+                            </div>
+                            <a target="_blank" href="javascript:void(0)" title="男戒">
+                                <span>男戒</span><span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)tml" title="铂金男戒">铂金</a>
+                                <a target="_blank" href="javascript:void(0)" title="K金男戒">K金</a>
+                            </div>
+                            <a target="_blank" href="javascript:void(0)" title="对戒">
+                                <span>对戒</span><span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="钻石对戒">钻石</a>
+                                <a target="_blank" href="javascript:void(0)" title="K金对戒">K金</a>
+                                <a target="_blank" href="javascript:void(0)" title="铂金对戒">铂金</a>
+                            </div>
+                        </div>
+                        <div class="drop_nav_content_center">
+                            <a target="_blank" href="javascript:void(0)">
+                                <img src="javascript:void(0)" alt=""></a>
+                        </div>
+                        <div class="drop_nav_content_right">
+                            <p><b>精彩活动</b></p>
+                            <p>·<a target="_blank" href="javascript:void(0)" title="爱之国度，精品女戒">爱之国度，精品女戒</a></p>
+                            
+                            <p style="text-overflow:ellipsis;">·<a target="_blank" href="javascript:void(0)" title="【恋恋四季】系列">【恋恋四季】系列</a></p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="drop_nav_content_bottom">
+                            <b>珠宝权威质检机构中心</b><br>国内授权的珠宝玉石专业质检机构，出具钻石及贵金属检测报告，符合行业首饰标准，确保首饰质量，保障您的消费权益。
+                        </div>
+                    </div>
+                </li>
+                <li data="gemstone">
+                    <div class="drop_nav">
+                        <a target="_blank" href="hjavascript:void(0)" class="">彩宝</a>
+                    </div>
+                    <div class="drop_nav_content hide" style="margin-top: 40px; display: none;">
+                        <div class="drop_nav_content_top" style="left: 91.5px;"></div>
+                        <div class="drop_nav_content_left">
+                            <a target="_blank" href="javascript:void(0)" title="红宝石">
+                                <span>红宝石</span><span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="红宝石戒指">戒指</a>
+                                <a target="_blank" href="javascript:void(0)" title="红宝石吊坠">吊坠</a>
+                                <a target="_blank" href="javascript:void(0)" title="红宝石耳钉">耳钉</a>
+                                <a target="_blank" href="javascript:void(0)" title="手链">手链</a>
+                            </div>
+                            <a href="http://www.zocai.com/product/sapphire" title="蓝宝石">
+                                <span>蓝宝石</span><span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="蓝宝石戒指">戒指</a>
+                                <a target="_blank" href="javascript:void(0)" title="蓝宝石吊坠">吊坠</a>
+                                <a target="_blank" href="javascript:void(0)" title="蓝宝石耳钉">耳钉</a>
+                            </div>
+                            <a target="_blank" href="javascript:void(0)" title="碧玺">
+                                <span>碧玺</span><span class="ico"></span>
+                            </a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="碧玺戒指">戒指</a>
+                                <a target="_blank" href="javascript:void(0)" title="碧玺吊坠">吊坠</a>
+                                <a target="_blank" href="javascript:void(0)" title="碧玺手链">手链</a>
+                                <a target="_blank" href="javascript:void(0)" title="碧玺耳钉">耳钉</a>
+                                <a target="_blank" href="javascript:void(0)" title="碧玺耳环">耳环</a>
+                                <a target="_blank" href="javascript:void(0)" title="碧玺项链">项链</a>
+                            </div>
+                            <a target="_blank" title="其它宝石" style="cursor:pointer;"><span>其它宝石</span><span class="ico"></span></a>
+                            <div class="content_left_sub">
+                                <a target="_blank" href="javascript:void(0)" title="芙蓉石" style="width:50px;">芙蓉石</a>
+                                <a target="_blank" href="javascript:void(0)" title="托帕石" style="width:50px;">托帕石</a>
+                                <a target="_blank" href="javascript:void(0)" title="水晶" style="width:50px;">水晶</a>
+                                <a target="_blank" href="javascript:void(0)" title="葡萄石" style="width:50px;">葡萄石</a>
+                            </div>
+                        </div>
+                        <div class="drop_nav_content_center" id="gemstonenava">
+                            <a target="_blank" href="javascript:void(0)">
+                                <img src="http://res.zocai.com/images/global/nav_img_gemstone.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="drop_nav_content_right" id="gemstonenavb">
+                            <p style="text-overflow:ellipsis;"><b>精彩活动</b></p>
+                            <p style="text-overflow:ellipsis;">·<a target="_blank" href="javascript:void(0)" title="瑰丽世界，宝石传奇">瑰丽世界，宝石传奇</a></p>
+                            <p style="text-overflow:ellipsis;">·<a target="_blank" href="javascript:void(0)" title="【玛雅*生命女神】碧玺精品系列">【玛雅*生命女神】碧玺精品系列</a></p>
+                            <p style="text-overflow:ellipsis;">·<a target="_blank" href="javascript:void(0)" title="【维多利亚时代】之奢华">【维多利亚时代】之奢华</a></p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="drop_nav_content_bottom" id="gemstonenavc">
+                            <b>色彩天成，贵乎稀有</b><br>天国之石---宝石天生拥有的美丽颜色是它的特性。颜色是评价一颗宝石的重要依据，当决定一颗宝石的颜色时，要验其色彩、色调及颜色饱和度，佐卡伊提供原产斯里兰卡，缅甸等地高品质宝石饰品。
+                        </div>
+                    </div>
+                </li>
+                <li data="shop">
+                    <div class="drop_nav"><a target="_blank" href="javascript:void(0)" class="">全国实体门店</a></div>
+                    <div class="drop_nav_content hide" style="margin-top: 40px; display: none;">
+                        <div class="drop_nav_content_top" style="left: 91.5px;"></div>
+                        <div class="drop_nav_content_center">
+                            <img src="http://res.zocai.com/Images/Global/Head1.0/shop.jpg" width="177" height="111">
+                        </div>
+                        <div class="drop_nav_content_right" style="width:120px;height:111px;">
+                            <p>
+                                <b>精彩活动</b>
+                            </p>
+                            <p>·<a target="_blank" href="javascript:void(0)" title="新近实体门店开业活动">新近实体门店开业活动</a></p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="drop_nav_content_bottom"><b>尊享服务，遍及全国。</b>
+                        </div>
+                    </div>
+                </li>
+                <li data="zbrand">
+                    <div class="drop_nav">
+                        <a target="_blank" href="javascript:void(0)" class="">佐卡伊品牌</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="search">
+        <div class="search_nr">
+            <div class="search_left">
+                <form id="searchForm" action="http://www.zocai.com/search/a1.html" method="get">
+                    <input type="text" id="searchText" name="key" class="input_text" placeholder="请输入关键字搜索">
+                    <input type="submit" class="input_button" value="搜索">
+                </form>
+            </div>
+            <div class="search_center">
+                <span>热门：</span>
+                        <a href="javascript:void(0)" target="_blank">钻戒定制</a>
+                        <a href="javascript:void(0)" target="_blank" class="ml10">玫瑰金对戒</a>
+                        <a href="javascript:void(0)" target="_blank" class="ml10">足金吊坠</a>
+                        <a href="javascript:void(0)" target="_blank" class="ml10">克拉钻</a>
+                        <a href="javascript:void(0)" target="_blank" class="ml10">钻石女戒</a>
+    
+            </div>
+            <div class="search_right">
+                <p>购物车中有<span>1</span>件商品</p>
+                <a rel="nofollow" href="javascript:void(0)">去结算</a>
+            </div>
+        </div>
+    </div>
+    <!-- 当前位置 -->
+    <div class="position">
+        <div class="position_title">
+            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_04.jpg">
+            <span>当前位置：
+                <a href="javascript:void(0)">佐卡伊珠宝网</a> &gt; 
+                <a href="javascript:void(0)">戒指</a> &gt; 
+                <a href="javascript:void(0)">钻石戒指</a> &gt; 
+            </span>
+        </div>
+    </div>
+    <!-- 产品 -->
+    <div class="product">
+        <div class="product_nr">
+            <div class="product_left">
+                <div class="product_l_one" >
+                    <div class="wrap">
+                       
+                        <img src="../images/C-W00232-W-RD-D-1.jpg" width="500" >
+                    
+                    <div class="mark"></div>
+                   
+                </div>
+                </div>
+                <div class="product_tupian" id="smallImgs">
+                    <div class="next" id="btnUp">
+                        <img src="http://res.zocai.com/Home/product/detail/2015/images/img_01.jpg">
+                    </div>
+                    <div class="product_neirong">
+                        <ul class="product_mil">
+                            <li class="">
+                                
+                                    <img class="zoom-tiny-image active" src="../images/C-W00232-W-RD-D-1.jpg" width="82">
+                                
+                            </li>
+                            <li class="">
+                                
+                                    <img class="zoom-tiny-image" src="../images/C-W00232-W-RD-D-2.jpg" width="82">
+                                
+                            </li>
+                            <li class="">
+                                
+                                    <img class="zoom-tiny-image" src="../images/C-W00232-W-RD-D-3.jpg" width="82">
+                               
+                            </li>
+                            <li class="">
+                                
+                                    <img class="zoom-tiny-image" src="../images/C-W00232-W-RD-D-4.jpg" width="82">
+                                
+                            </li>
+                            <li class="">
+                                
+                                    <img class="zoom-tiny-image" src="../images/C-W00232-W-RD-D-5.jpg" width="82">
+                               
+                            </li>
+            </ul>
+                    </div>
+                    <div class="pre" id="btnDown">
+                        <img src="http://res.zocai.com/Home/product/detail/2015/images/img_02.jpg">
+                    </div>
+                </div>
+                <div class='rightBox'>
+                    <img src="http://res.zocai.com/Pimg/W00232/C-W00232-W-RD-D-1.jpg?v=20181204154052">
+                </div>
+            </div>
+            <script src="../js/public.js"></script>
+            <script src="../js/fangdajing.js"></script>
+            <script>
+                var Box =document.querySelector('.product_left')
+                new FangDaJin(Box)
+            </script>
+            <!-- 右边详情信息盒子 -->
+            <div class="product_right">
+                <div class="product_r_one">
+                    <div class="l_r_o_text1">【挚爱】  <span id="title">PT950铂金女士钻石戒指</span>
+                        <span style="color:#999;font-size:12px;">【款号：W00232】</span>
+                    </div>
+                    <div class="l_r_o_text2">采用圆钻六爪镶嵌，最大限度释放璀璨华彩</div>
+                    <div class="l_r_o_text3">
+                                <span id="txtprice" style="font-size:20px;">佐卡伊价：</span>
+                                <span style="color:#a10000;" id="sprice">￥7660.00 </span>
+                    </div>
+                    <div class="l_r_o_text3">
+                    </div>
+                </div>
+                <div class="product_xian"></div>
+                <div class="product_pengyouquan">
+                        <p>
+                            <span>主钻重量(ct)：<c id="showcarat">0.30</c></span>
+                            <span>主钻颜色(color)：<c id="showcolor">D-E</c></span>
+                        </p>
+                        <p>
+                            <span>主钻净度(clarity)：<c id="showclarity">VS</c></span>
+                                <span>主钻切工(cut)：<c id="showcut">VG</c></span>
+                                <input type="hidden" id="showshape">
+                        </p>
+                        <p style="display:none;">
+                            <span id="viceDiamond1" data-carat="0">副钻总重(ct)：约 0克拉</span>
+                                <span>证书：GIC鉴定证书</span>
+                        </p>
+                </div>
+                <div class="product_three">
+                        <div class="l_three_shoucun">
+                            <span>选择指圈：</span> <select name="size" id="sizeSelect" class="text_select">
+                                <option value="0">指圈待定</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                            </select>
+                            <a href="javascript:void(0)" target="_blank">如何测量指圈号?</a>
+                        </div>
+    
+                </div>
+                
+                <div class="product_r_four">
+                    <form id="basketForm" action="" method="post">
+                        <input type="hidden" name="CurrentUrl" value="http://www.zocai.com/pdetail/w01576-w-rd-1.html">
+                        <input type="hidden" name="Type" value="P">
+                        <input type="hidden" name="Code" value="W01576-W-RD-1">
+                        <input type="hidden" name="Price" id="Price" value="26999.00">
+                        <input type="hidden" name="ClassProduct" id="ClassProduct" value="戒指">
+                        <input type="hidden" name="Size" id="Size" value="0">
+                        <input type="hidden" name="Msize" id="Msize" value="">
+                        <input type="hidden" name="Fsize" id="Fsize" value="">
+                        <input type="hidden" name="Dcode" id="Dcode" value="">
+                        <input type="hidden" name="GType" id="GType" value="钻石">
+                        <input type="hidden" name="Metal" id="Metal" value="PT950">
+                        <input type="hidden" name="ClassSex" id="ClassSex" value="女士">
+                            <input type="hidden" name="Carat" id="Carat" value="0.60">
+                            <input type="hidden" name="Shape" id="Shape" value="圆形">
+                            <input type="hidden" name="Color" id="Color" value="D-E">
+                            <input type="hidden" name="Clarity" id="Clarity" value="VS">
+                            <input type="hidden" name="Cut" id="Cut" value="VG">
+
+                        <input type="hidden" name="SysName" id="SysName" value="PT950铂金钻石戒指">
+                        <input type="hidden" name="WebSign" id="WebSign" value="">
+                        <input type="hidden" name="Sign" id="Sign" value="a1bf624dae4779fcd57bf7afd058ea2e">
+
+                        <input type="button" value="立即购买" class="button_txt1" id="bi">
+                        <input type="button" value="加入购物车" class="button_txt2" id="ab">
+                    </form>
+                     <script type="text/javascript">
+                        $(function () {
+                            $("#bi").click(function () {
+                                var p = $("#Price").val();
+                                if (signprice != p) {
+                                    location.href = location.href;
+                                    return;
+                                }
+                                $(this).parents("form").attr('action', 'http://passport.zocai.com/Cart/AddBuyCartItem?at=s');
+                                    alert("您还没有登录，请登录。"); window.location.href = "http://passport.zocai.com/Login/Index?ReturnUrl=http%3a%2f%2fwww.zocai.com%2fpdetail%2fw01576-w-rd-1.html";
+                            });
+                            $("#ab").click(function () {
+                                var p = $("#Price").val();
+                                if (signprice != p) {
+                                    location.href = location.href;
+                                    return;
+                                }
+                                $(this).parents("form").attr('action', 'http://passport.zocai.com/Cart/AddBuyCartItem');
+                                $(this).parents("form").submit();
+                            });
+
+                            $("#ab1").live("click", function () {
+                                var p = $("#Price").val();
+                                if (signprice != p) {
+                                    location.href = location.href;
+                                    return;
+                                }
+                                $("#basketForm").attr('action', 'http://passport.zocai.com/Cart/AddBuyCartItem');
+                                $("#basketForm").submit();
+
+                            });
+                        });
+                    </script> 
+
+                    <script>
+                        // 添加商品
+                        $(".button_txt2").click(function(){
+                            
+                            $.ajax({
+                                url:'../interface/addwq.php',
+                                dataType:'json',
+                                data:{
+                                    id:'2008221405417021',
+                                    name:"白18k金40克拉",
+                                    img:'http://res.zocai.com/Pimg/W00105/C-W00105-W-RD-A-1.jpg?v=20151221142558',
+                                    num:9,
+                                    price:10999
+                                },
+                                success:function(res){
+                                    if(res.code){
+                                        alert('商品加入成功')
+                                    }else{
+                                        alert('商品加入失败')
+                                    }
+                                }
+                            })
+                        })
+
+                        // 查询并显示购物车
+                        function showCart(){
+                            $.ajax({
+                                url:'../interface/showlist.php',
+                                dataType:'json',
+                                success:function(res){
+                                    $('#cartItem').html("");
+                                    $.each(res.data,function(index,item){
+                                        $('ul').append(`
+                                        <li id="${item.product_id}" class="">
+                                            <div class="gw_pro_c_one">
+                                            <div class="one_text1">
+                                                <input name="cartselect" type="checkbox" id="${item.product_id}" class="input_checkbox2" value="${item.product_id}" onchange="cartselect(this)">
+                                                <span><a href="${item.product_img}" target="_blank" rel="nofollow"> 
+                                                    <img src="${item.product_img}"></a>
+                                                </span>
+                                            </div>
+                                            <div class="one_text2">
+                                                <p> &nbsp;</p>
+                                                <p>
+                                                    <a href="${item.product_img}" target="_blank" rel="nofollow">${item.product_name}</a>
+                                                </p>
+                                                    <p> &nbsp;</p>
+                                                    <p>石重：0.60克拉 净度：VS VG</p>
+                                                    <p>颜色：D-E 形状：圆形 切工：VG</p>
+                                            </div>
+                                            <div class="one_text3">
+                                                <p>
+                                                        <select class="input_option" data="2008251959323896">
+                                                            <option value="0">指圈待定</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+                                                                    <option value="32">32</option>
+                                                        </select>
+                                                </p>
+                                            </div>
+                                            <div class="one_text4" id="dword1">
+                                                <p>
+                                                        <input name="word" maxlength="8" type="text" value="" class="input_text" data="2008251959323896">
+                                                        <span style="display:block;" id="worttxt11">*点击可修改</span>
+                                                        <span style="display:none;" id="worttxt21">*最多4个汉字或8个英文</span>
+                                                </p>
+        
+                                            </div>
+                                            <div class="one_text5">
+                                                <select name="${item.product_num}" class="input_select" data="${item.product_id}" id="${item.product_id}">
+                                                    <option value="0">选择数量</option>
+                                                            <option value="1" selected="selected">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                </select>
+                                            </div>
+                                    <div class="one_text6">
+                                        ￥<span id="${item.product_id}">${item.product_price}</span>
+                                    </div>
+                                    <div class="one_text7">￥<span id="${item.product_id}">${item.product_price}</span>
+                                    </div>
+                                    <div class="one_text8">
+                                        <p>移到收藏夹</p>
+                                        <p class="deleteItem" style=" cursor:pointer;" data="${item.product_id}">删除</p>
+                                    </div>
+                                </div>
+                            </li>
+                                        `)
+                                    })
+                                }
+                            })
+                        } 
+                        showCart()
+
+                        //删除商品
+                $('#cartItem').on('click','.deleteItem',function(){
+                    var id = $(this).parents("cartItem").children().eq(0).html();
+                    $.ajax({
+                    url:"../interface/delwq.php",
+                    data:{
+                    id:id
+                    },
+                    dataType:'json',
+                    success:function(res){
+                    if(res.code){
+                        showCart()
+                    }
+                }
+            })
+            
+        })
+
+        //增加商品
+        $('.gouwuche_pro').on("click",".input_select",function(){
+            $.ajax({
+                url:"../interface/updatewq.php",
+                dataType:'json',
+                data:{
+                    type:'add',
+                    id:'2008221405417021'
+                },
+                success:function(res){
+                    if(res.code){
+                        alert('商品增加成功')
+                    }
+                }
+            })
+        })
+
+                    </script> 
+
+            </div>
+    
+                <div class="product_five">
+                    <img src="http://res.zocai.com/Home/product/detail/2015/images/img_13.jpg">
+                </div>
+                <div class="product_pengyouquan2">配送方式：可配送至全国，顺丰速递或中国邮政EMS（全国保险）</div>
+    
+                <div class="product_r_six">
+                    <div class="product_six_saoma_active" id="weixin">
+                        <img src="http://res.zocai.com/Home/product/detail/2015/images/img_19.jpg">
+                        <span>手机扫码打开</span>
+                    </div>
+                    <div class="product_six_saoma2">
+                        <img src="http://res.zocai.com/Home/product/detail/2015/images/img_15.jpg">
+                        <span>收藏</span>
+                    </div>
+                    <div class="product_six_saoma2" style="float:left;margin-left:10px;">
+                        <div class="bshare-custom">
+                            <div class="bsPromo bsPromo2">
+
+                            </div>
+                            <a title="分享到QQ空间" class="bshare-qzone"></a>
+                            <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                            <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>分享
+                        </div>
+                        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh">
+                        </script>
+                        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js">
+                        </script>
+                    </div>
+                    <div class="product_s_s_bottom" style="display:none; margin-top:50px;" id="weixinqr"> 
+                        <img src="http://passport.zocai.com/service/GetQRCode?t=http://m.zocai.com/pdetail/W00232-W-RD-4.html" width="396" height="396">
+                        <b>手机扫码打开产品页面</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分割线-->
+        <div class="CuttingLine">
+            <div class="Cutting_line"></div>
+        </div>
+    
+        <!--最佳搭配-->
+            <div class="match">
+                <div class="match_nr">
+                    <div class="match_title">相关推荐</div>
+                    <div class="match_product">
+                            <div class="match_text">
+                                <a rel="nofollow" href="javascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Pimg/W06405/C-W06405-R-RD-A-1.jpg?v=20180130141722" width="130" height="130"></a>
+                                <p>【简约】</p>
+                                <p>佐卡伊价：<span>￥999.00</span></p>
+                            </div>
+                            <div class="match_text">
+                                <a rel="nofollow" href="hjavascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Pimg/W00105/C-W00105-W-RD-A-1.jpg?v=20151221142558" width="130" height="130"></a>
+                                <p>【挚爱经典—注定的爱】</p>
+                                <p>佐卡伊价：<span>￥10999.00</span></p>
+                            </div>
+                            <div class="match_text">
+                                <a rel="nofollow" href="javascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Pimg/W01576/C-W01576-W-RD-A-1.jpg?v=20190311175421" width="130" height="130"></a>
+                                <p>【传世经典】</p>
+                                <p>佐卡伊价：<span>￥26999.00</span></p>
+                            </div>
+                            <div class="match_text">
+                                <a rel="nofollow" href="javascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Pimg/W03338/C-W03338-W-RD-A-1.jpg?v=20190312115559" width="130" height="130"></a>
+                                <p>【纯情】系列</p>
+                                <p>佐卡伊价：<span>￥4399.00</span></p>
+                            </div>
+                            <div class="match_text">
+                                <a rel="nofollow" href="javascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Pimg/W02731/C-W02731-W-RD-A-1.jpg?v=20181119165802" width="130" height="130"></a>
+                                <p>【铭刻之吻】</p>
+                                <p>佐卡伊价：<span>￥3999.00</span></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!--主内容信息-->
+        <div class="commodity">
+            <div class="commodity_nr">
+                <div class="commodity_daohangtiao">
+                    <div class="commodity_cut" id="tab">
+                        <div class="commodity_100 " id="fudong_daohang" style="position: static; top: 1196px;">
+                            <ul class="num">
+                                <li class="active">
+                                    <a style=" cursor:pointer;">商品详情</a>
+                                    <span style=" text-align:center;margin-left:30px;float:left;">|</span></li>
+                                <li>
+                                    <a style=" cursor:pointer;">购买评价</a>
+                                    <span style=" text-align:center;margin-left:30px;float:left;">|</span></li>
+                                <li>
+                                    <a style=" cursor:pointer;">常见问题</a>
+                                    <span style=" text-align:center;margin-left:30px;float:left;">|</span></li>
+                                <li>
+                                    <a style=" cursor:pointer;">售后服务</a>
+                                </li>
+                                <span style=" float:right;cursor:pointer;" class="input_button" id="ab1">
+                                    <img src="http://res.zocai.com/Home/product/detail/2015/images/img_43.jpg">
+                                </span>
+                            </ul>
+                        </div>
+                        <!--商品详情-->
+                        <div class="pro_xiangqing" style="display:block;" id="tab1">
+                            <div class="pro_xq_xinxi">
+                                <p>
+                                    <span class="xinxi_title">产品参数</span>
+                                    <span class="span_1">产品编号：</span>
+                                    <span class="span_2">W00232-W-RD-4</span>
+                                    <span class="span_1">产品材质：</span>
+                                    <span class="span_2" id="showmetal2">PT950铂金</span>
+                                    <span class="span_1">金属重量：</span>
+                                    <span class="span_2">约 2.80克</span>
+                                    <span class="span_1">产品证书：</span>
+                                        <span class="span_2">GIC鉴定证书</span>
+                                </p>
+    
+                                <p style="display:block;">
+                                    <span class="xinxi_title">主钻信息</span>
+                                    <span class="span_1" style="display:block;">形状：</span>
+                                    <span class="span_2" style="display:block;" id="showshape2">圆形</span>
+                                    <span class="span_1" style="display:block;">数量：</span>
+                                    <span class="span_2" style="display:block;">1颗</span>
+                                    <span class="span_1" style="display:block;">重量：</span>
+                                    <span class="span_2" style="display:block;" id="showcarat2">0.30克拉</span>
+                                    <span class="span_1" style="display:block;">颜色：</span>
+                                    <span class="span_2" style="display:block;" id="showcolor2">D-E</span>
+                                    <span class="span_1" style="display:block;">净度：</span>
+                                    <span class="span_2" style="display:block;" id="showclarity2">VS</span>
+                                    <span class="span_1" style="display:block;">切工：</span>
+                                    <span class="span_2" style="display:block;" id="showcut2">VG</span>
+                                </p>
+                                <p style="display:none;">
+                                    <span class="xinxi_title">副钻信息</span>
+                                    <span class="span_1" style="display:none;">形状：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">总重：</span>
+                                    <span class="span_2" style="display:none;">约 <span id="viceDiamond2" data-carat="0)">0</span>克拉</span>
+                                    <input id="showgtype2" type="hidden">
+                                </p>
+                                <p style="display:none;">
+                                    <span class="xinxi_title">宝石信息</span>
+                                    <span class="span_1" style="display:none;">类型：</span>
+                                    <span class="span_2" style="display:none;" id="showgtype2"></span>
+                                    <span class="span_1" style="display:none;">形状：</span>
+                                    <span class="span_2" style="display:none;" id="showshape2"></span>
+                                    <span class="span_1" style="display:none;">颜色：</span>
+                                    <span class="span_2" style="display:none;" id="showcolor2"></span>
+                                    <span class="span_1" style="display:none;">净度：</span>
+                                    <span class="span_2" style="display:none;" id="showclarity2"></span>
+                                    <span class="span_1" style="display:none;">数量：</span>
+                                    <span class="span_2" style="display:none;">0颗</span>
+                                    <span class="span_1" style="display:none;">尺寸：</span>
+                                    <span class="span_2" style="display:none;" id="showcarat2"></span>
+                                </p>
+    
+                                <p style="display:none;">
+                                    <span class="xinxi_title">副宝信息</span>
+                                    <span class="span_1" style="display:none;">类型：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">形状：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">色彩：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">净度：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">数量：</span>
+                                    <span class="span_2" style="display:none;">0颗</span>
+                                    <span class="span_1" style="display:none;">总重：</span>
+                                    <span class="span_2" style="display:none;">0.00克拉</span>
+                                </p>
+                                <p style="display:none;">
+                                    <span class="xinxi_title">珍珠信息</span>
+                                    <span class="span_1" style="display:none;">类型：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">形状：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">颜色：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">光泽：</span>
+                                    <span class="span_2" style="display:none;"></span>
+                                    <span class="span_1" style="display:none;">尺寸：</span>
+                                    <span class="span_2" style="display:none;"></span>
+    
+    
+                                </p>
+                            </div>
+                            <div class="pro_xq_tupian">
+                                <h3>PT950铂金女士钻石戒指</h3>
+                                <p style="line-height:24px;">
+                                    【挚爱】采用圆钻六爪镶嵌法，六爪钻戒在设计时将圆形的钻石镶嵌在圆润点柱上，尽情地释放钻石火彩，使其光线随着切割面得以全方位折射，尽显璀璨光华。
+                                </p>
+                                <br>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519065432.jpg" style="width: 790px; height: 699px; display: block;" src="http://res.zocai.com/news/upload/1709161519065432.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519070102.jpg" style="width: 790px; height: 904px; display: block;" src="http://res.zocai.com/news/upload/1709161519070102.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519074173.jpg" style="width: 790px; height: 1043px; display: block;" src="http://res.zocai.com/news/upload/1709161519074173.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519079223.jpg" style="width: 790px; height: 906px; display: block;" src="http://res.zocai.com/news/upload/1709161519079223.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519083683.jpg" style="width: 790px; height: 889px; display: block;" src="http://res.zocai.com/news/upload/1709161519083683.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519088253.jpg" style="width: 790px; height: 859px; display: block;" src="http://res.zocai.com/news/upload/1709161519088253.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519091584.jpg" style="width: 790px; height: 667px; display: block;" src="http://res.zocai.com/news/upload/1709161519091584.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519095064.jpg" style="width: 790px; height: 515px; display: block;" src="http://res.zocai.com/news/upload/1709161519095064.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519098784.jpg" style="width: 790px; height: 505px; display: block;" src="http://res.zocai.com/news/upload/1709161519098784.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519102244.jpg" style="width: 790px; height: 494px; display: block;" src="http://res.zocai.com/news/upload/1709161519102244.jpg"> 
+        <img alt="" data-original="http://res.zocai.com/news/upload/1709161519106325.jpg" style="width: 790px; height: 719px; display: block;" src="http://res.zocai.com/news/upload/1709161519106325.jpg">
+    </p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1611041201211891.jpg" style="width: 790px; height: 279px; display: block;" src="http://res.zocai.com/news/upload/1611041201211891.jpg">
+    </p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106320706.jpg" style="width: 790px; height: 790px; display: block;" src="http://res.zocai.com/news/upload/1701171106320706.jpg">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106322336.jpg" style="width: 790px; height: 790px; display: block;" src="http://res.zocai.com/news/upload/1701171106322336.jpg">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106324386.jpg" style="width: 790px; height: 790px;" src="http://res.zocai.com/news/upload/1701171106324386.jpg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1611041201213161.jpg" style="width: 790px; height: 113px;" src="http://res.zocai.com/news/upload/1611041201213161.jpg">
+    </p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106311336.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/news/upload/1701171106311336.JPG">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106312956.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/news/upload/1701171106312956.JPG">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106314306.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106316436.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106318306.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106328297.jpg" style="width: 790px; height: 790px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171108219829.jpg" style="width: 790px; height: 790px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1611041201214501.jpg" style="width: 790px; height: 115px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106309466.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106306725.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106304355.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        &nbsp;</p>
+    <p style="text-align: center;">
+        <img alt="" data-original="http://res.zocai.com/news/upload/1701171106302025.JPG" style="width: 790px; height: 526px;" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg">
+    </p>
+    <div>
+        &nbsp;</div>
+                            </div>
+                            <table style="" width="790" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr class="firstRow"><td colspan="7">
+                                        <img data-original="http://res.zocai.com/Images/Home/Product/detail/shoucun.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a1054N3402c678.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/shoucun.gif" alt="" width="213" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a1055N9ebb58bb.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/shoucun3.gif" alt="" width="213" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a1055Na6fdd093.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/shoucun4.gif" alt="" width="213" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105bN854b2525.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105bN6fa142b9.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105bN25a3ec58.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105bNd256b491.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105cN73a5c33c.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105cNe69c93c7.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/5604ae22Nc28b4b54.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                        <td><img data-original="http://res.zocai.com/Images/Home/Product/detail/559a105cN1eced919.jpg" alt="" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table width="790" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                    <tr class="firstRow"><td>
+                                        <img data-original="http://res.zocai.com/Images/Home/Product/detail/shoucun2.jpg" src="http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--购买评价-->
+                        <div class="pro_evaluate" style="display:none;" id="tab2">
+                            <div class="pro_comment">
+                                <span style="width:900px;">评价心得</span>
+                                <span style="width:10px;">|</span>
+                                <span style="width:140px;">顾客满意度</span>
+                                <span style="width:10px;">|</span>
+                                <span style="width:120px;">评论者</span>
+                            </div>
+                            <div id="fdContent">    <ul class="pro_pj_top">
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left"><img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2018年01月14日</div>
+                            <div class="left_xiamian">非常满意，戒指大小也非常合适</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">周**翰[青岛]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left"><img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2018年01月10日</div>
+                            <div class="left_xiamian">老婆很喜欢很满意，谢谢佐卡伊</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">易**泽[辽阳]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left"><img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2018年01月10日</div>
+                            <div class="left_xiamian">百年经典款，还不错，大小也很合适。证书很齐全，是真钻哦</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">许**勋[德州]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left"><img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月29日</div>
+                            <div class="left_xiamian">宝贝收到了 质量很好呢 做工不错哦 佩戴起来很好看哦 颜色也很好看 跟图片一样的</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">梁**新[鞍山]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月29日</div>
+                            <div class="left_xiamian">钻戒特别显钻，反正老婆很喜欢，比什么都重要。赞</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">虞**釜[昆明]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月21日</div>
+                            <div class="left_xiamian">戒指还不错，客服很用心，我很满意</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">陈**深[南宁]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月21日</div>
+                            <div class="left_xiamian">挺不错的，钻很闪，款式是很显钻的爪镶，性价比挺高的，很开心买到它</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">刘**航[聊城]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月14日</div>
+                            <div class="left_xiamian">戒指收到啦，很漂亮，戴着很秀气，目前钻看着很闪，相信佐卡伊的品质，就没拿去鉴定了，客服很周到细心，赞个</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">卫**宝[北京]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月12日</div>
+                            <div class="left_xiamian">收到了钻戒，挺满意的，谢谢小杰耐心的讲解，推荐的号码戴上刚合适，满意！</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">张**时[德州]</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pro_top_txt1">
+                        <div class="pro_t_t_left">
+                            <img src="http://res.zocai.com/Home/product/detail/2015/images/img_21.jpg" width="100%"></div>
+                        <div class="pro_t_t_center">
+                            <div class="left_shangmian">2017年12月07日</div>
+                            <div class="left_xiamian">宝贝很给力 媳妇可喜欢了 很到位 强烈推荐</div>
+                        </div>
+                        <div class="pro_t_t_xingji">
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                                <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_41.jpg"></span>
+                        </div>
+                        <div class="pro_t_t_right">孔**顾[青岛]</div>
+                    </div>
+                </li>
+        </ul>
+        <div class="pro_pj_center" id="pageinfo">
+            <div class="bianhao_b_left">1/16页</div><div class="bianhao_b_right">
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',1);" class="currpage">1</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',2);">2</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',3);">3</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',4);">4</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',5);">5</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',6);;">...</a>
+                <a href="javascript:void(0);" onclick=" searchFeedBack('W00232-W-RD-4',15);">15</a>
+                <a href="javascript:void(0);" title="尾页" onclick=" searchFeedBack('W00232-W-RD-4',16);">16</a>
+            </div>
+        </div>
+    </div>
+    
+                            <div class="pro_pj_bottom">
+                                <span><a href="javascript:void(0)" target="_blank">
+                                    <img src="http://res.zocai.com/Home/product/detail/2015/images/img_22.jpg" border="0"></a></span>
+                            </div>
+                        </div>
+                        <!--常见问题-->
+                        <div class="pro_wenti" style="display:none;" id="tab3">
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_23.jpg"></span>
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_24.jpg"></span>
+                        </div>
+                        <!--售后服务-->
+                        <div class="pro_wufu" style="display:none;" id="tab4">
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_25.jpg"></span>
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_26.jpg"></span>
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_27.jpg"></span>
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_28.jpg"></span>
+                            <span><img src="http://res.zocai.com/Home/product/detail/2015/images/img_29.jpg"></span>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    
+        <!--分割线-->
+        <div class="CuttingLine">
+            <div class="Cutting_line"></div>
+        </div>
+    
+    
+    
+        <!--热门分类-->
+        <div class="hotClassify ">
+            <div class="hotClassify_nr">
+                <div class="hotClassify_title">热门分类</div>
+                <div class="hotClassify_problem">
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">戒指:</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石戒指</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">宝石戒指</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">铂金戒指</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金戒指</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_parent">结婚戒指</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">钻戒</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">铂金钻戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="hjavascript:void(0)" target="_blank">k金钻戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">30分钻戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">50分钻戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">70分钻戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">克拉钻戒</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">对戒</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石对戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">铂金对戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金对戒</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金对戒</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">吊坠</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石吊坠</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">宝石吊坠</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">铂金吊坠</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金吊坠</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">碧玺吊坠</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金吊坠</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">耳钉</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石耳钉</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">铂金耳钉</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金耳钉</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金耳钉</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">宝石耳钉</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">碧玺耳钉</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">耳环</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石耳环</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金耳环</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k宝石耳环</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">项链</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石项链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金项链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金项链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">宝石项链</a></span>
+                    </div>
+                    <div class="hotClassify_problem_text1">
+                        <span class="span_title"><a href="javascript:void(0)" target="_blank">手链</a></span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">钻石手链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">k金手链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">碧玺手链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="hjavascript:void(0)" target="_blank">铂金手链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">玫瑰金手链</a></span>
+                        <span class="span_2">|</span>
+                        <span class="span_1"><a href="javascript:void(0)" target="_blank">宝石手链</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+        <!--分割线-->
+        <div class="CuttingLine">
+            <div class="Cutting_line"></div>
+        </div>
+    
+        <!--品牌门店-->
+        <div class="BrandStores">
+            <div class="BrandStores_nr">
+                <div class="BrandStores_title">品牌门店</div>
+                <div class="BrandStores_b_left">
+                    <img src="http://res.zocai.com/Home/product/detail/2015/images/img_39.jpg">
+                </div>
+                <div class="BrandStores_b_right">
+                    <div class="BrandStores_b_right_top">预约实体店</div>
+                    <form action="http://www.zocai.com/Offline/AddBespoke" method="post" id="CForm" target="_blank">
+                        <div class="BrandStores_b_right_center">
+                            <ul>
+                                <li>
+                                    <span></span>
+                                    <select class="select_xuanzhe" id="provinceSel">
+                                        <option value="all">--通过省份筛选店铺--</option>
+                                        <option value="广东">广东</option>
+                                        <option value="上海">上海</option>
+                                        <option value="河南">河南</option>
+                                        <option value="浙江">浙江</option>
+                                        <option value="福建">福建</option>
+                                        <option value="湖北">湖北</option>
+                                        <option value="山东">山东</option>
+                                        <option value="安徽">安徽</option>
+                                        <option value="陕西">陕西</option>
+                                        <option value="天津">天津</option>
+                                        <option value="吉林">吉林</option>
+                                        <option value="内蒙古">内蒙古</option>
+                                        <option value="甘肃">甘肃</option>
+                                        <option value="湖南">湖南</option>
+                                        <option value="江苏">江苏</option>
+                                        <option value="重庆">重庆</option>
+                                        <option value="河北">河北</option>
+                                        <option value="山西">山西</option>
+                                        <option value="江西">江西</option>
+                                        <option value="北京">北京</option>
+                                        <option value="甘肃省">甘肃省</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>选择店铺</span>
+                                    <select class="select_xuanzhe" id="BookingShop" name="BookingShop">
+                                        <option value="">--选择--</option>
+                                    </select>
+                                </li>
+                                <li><span>您的姓名</span>
+                                    <input id="TrueName" name="TrueName" type="text" class="input_box1"></li>
+                                <li>
+                                    <span>您的性别</span><select class="select_xuanzhe" id="Sex" name="Sex">
+                                        <option value="">--选择--</option>
+                                        <option value="1">男</option>
+                                        <option value="2">女</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>手机号码</span>
+                                    <input id="Mobile" name="Mobile" type="text" value="" class="input_box1">
+                                </li>
+                                <li>
+                                    <span>到店时间</span>
+                                    <input id="ArriveTime" onclick="WdatePicker()" name="ArriveTime" type="text" value="" class="input_box1">
+                                </li>
+                            </ul>
+                            <input type="hidden" id="IndurtyName" name="IndurtyName" value="">
+                            <input type="hidden" id="Purpose" name="Purpose" value="其它">
+                            <input type="hidden" id="QQ" name="QQ" value="">
+                            <input type="hidden" id="Remark" name="Remark" value="">
+                            <input type="hidden" id="ReceptionNum" value="">
+                        </div>
+                        <div class="BrandStores_b_right_bottom">
+                            <input name="btnBreak" type="button" value="在线预约" class="button_box1" id="btnBreak">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/html" id="fenqil_onTpl">
+            <div class="fenqil_on">
+                <span style=" font-size: 14px; margin: 8px 15px; display: inline-block;">还款详情</span>
+                <table style="" cellpadding="0" cellspacing="0">
+                    <tr style="height:40px;">
+                        <td>账单</td>
+                        <td>每期本金</td>
+                        <td>每期服务费</td>
+                    </tr>
+                    {{#  for(var i in d) { }}
+                    <tr class="fenqil_on_tr_{{i}}" style="height: 40px;">
+                        <td>{{i}}期</td>
+                        <td>{{((d[i].monPay)-(d[i].monHandleFee)).toFixed(2)}}</td>
+                        <td class="td_pay"><span class="word"> {{d[i].monHandleFee}}</span>
+                            {{# if (i==3) { }}
+                               <span class="stage-tag">限时免息</span>                                                           
+                            {{# } }}                       
+                        </td>
+                    </tr>
+                    {{#  }; }}
+                </table>
+                <span class="fenqil_on_directions">此分期服务由“分期乐”提供。每期金额是根据订单金额估算得出，实际支付金额请以账单为准。</span>
+            </div>
+        </script>
+    
+    
+    
+        <div class="fuwu">
+        <div class="fuwu_nr">
+            <img src="http://res.zocai.com/Home/Global/bottom15/images/img_31.jpg">
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="about_nr">
+            <ul style="width:960px;margin:0 auto;height:193px;text-align:center;">
+                <li>
+                    <div class="about_title"><img src="http://res.zocai.com/Home/Global/bottom15/images/img_23.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">购物流程</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">会员体系</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">隐私条款</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_title">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_24.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">支付方式</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">常见问题</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_title">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_25.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">配送方式</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">配送时间</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_title">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_26.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">售后支持</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">退换说明</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">退换流程</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_title">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_27.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">走进佐卡伊</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">宝石品质承诺</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">工艺纪实</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">联系我们</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">英才诚聘</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_title">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_28.jpg"></div>
+                    <div class="about_center">
+                        <img src="http://res.zocai.com/Home/Global/bottom15/images/img_29.jpg">
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">找回密码</a>
+                        <a href="javascript:void(0)" target="_blank" rel="nofollow">权威机构</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="zuokayi">
+        <div class="zuokayi_nr">
+            <div class="zuokayi_wenzi">
+                <p style=" text-align:2em;">
+                    深圳市佐卡伊电子商务有限公司，珠宝品牌，何以笙箫默、咱们结婚吧等影视战略合作伙伴。践行珠宝领域全渠道运营，在北京、上海、深圳、杭州等国内主要城市设有100多家门店。线上线下提供<a href="http://www.zocai.com/diamond" title="钻 石" target="_blank">裸钻</a>、<a href="http://www.zocai.com/product/gemstone" target="_blank">彩宝</a>、<a href="http://www.zocai.com/plist/c-a1-r-a-a-a-x-a.html" target="_blank">钻戒</a>、<a href="http://www.zocai.com/product/ring" target="_blank">婚戒</a>、<a target="_blank" href="http://www.zocai.com/couplesrings" title="对戒">对戒</a>、<a href="http://www.zocai.com/product/nechlace" target="_blank">钻饰</a>、<a href="http://www.zocai.com/product/kgold">K金</a>、<a target="_blank" href="http://www.zocai.com/plist/c-a1-d-a-a-a-a-a.html" title="吊坠">吊坠</a>、<a target="_blank" href="http://www.zocai.com/plist/c-a1-x-a-a-a-a-a.html" title="项链">项链</a>、<a target="_blank" href="http://www.zocai.com/plist/c-a1-s-a-a-a-a-a.html" title="手链">手链</a>、<a target="_blank" href="http://www.zocai.com/plist/c-a1-e-a-a-a-a-a.html" title="耳钉">耳钉</a>、<a target="_blank" href="http://www.zocai.com/plist/c-a1-h-a-a-a-a-a.html" title="耳环">耳环</a>等产品，为顾客提供优质产品和贴心服务。
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="newcopyright">
+        <div class="newcopyright_nr">
+            <div class="cop_top">
+                <p>Copyright <span style="font-family: Arial;">©</span> 2004-2020 深圳市佐卡伊电子商务有限公司版权所有</p>
+                <p>
+                    粤ICP备11102294号　工商营业执照注册号：440301105686972　增值电信业务经营许可证：粤B2-20120488
+                    <span style=" display: inline-block;">
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1264468123'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1264468123%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                        </script>
+                        <script src=" http://s19.cnzz.com/z_stat.php?id=1264468123&amp;show=pic1" type="text/javascript">
+                        </script>
+                        <script src="http://c.cnzz.com/core.php?web_id=1264468123&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript">
+                        </script>
+                    </span>
+                </p>
+            </div>
+            <div class="cop_bottom">
+                <a href="javascript:void(0)" target="_blank" rel="nofollow">
+                    <img src="http://res.zocai.com/Images/Global/Bottom1.0/bottom_13.jpg">
+                </a>
+                <a href="javascript:void(0)" target="_blank" rel="nofollow">
+                    <img src="http://res.zocai.com/Images/Global/Bottom1.0/bottom_14.jpg"></a>
+                <a href="javascript:void(0)" target="_blank" rel="nofollow">
+                    <img src="http://res.zocai.com/Images/Global/Bottom1.0/bottom_16.jpg"></a>
+                <img src="http://res.zocai.com/Images/Global/Bottom1.0/bottom_15.jpg">
+                <img src="http://res.zocai.com/Images/Global/Bottom1.0/bottom_17.jpg">
+                <a href="javascript:void(0)" rel="nofollow" target="_blank">
+                    <img src="http://res.zocai.com/Images/home/ad/20150522003.jpg"></a>
+            </div>
+        </div>
+    </div>
+    
+    
+        <style type="text/css">
+    </style>
+    <!--弹出框-->
+    <div class="home_blocker" id="zocaikefu_blocker"></div>
+    <div class="kefu" style=" display:none;" id="zocaikefu">
+        <div class="kefu_guangbi" id="zocaikefu_colse">
+            <img src="http://res.zocai.com/Home/RightMenu/images/img_06.png">
+        </div>
+        <div class="kefu_nr">
+            <div class="kefu_center">
+                <div class="kf_top">
+                    <a href="hjavascript:void(0)" target="_blank">
+                        <p class="title">售前客服</p>
+                        <p class="shuom"><span>商品咨询</span><span>活动咨询</span><span>预约门店</span></p>
+                    </a>
+                </div>
+                <div class="kf_zhong">
+                    <a href="hjavascript:void(0)" target="_blank">
+                        <p class="title">售后客服 </p>
+                        <p class="shuom"><span>定制进度</span><span>订单查询</span><span>保养咨询</span></p>
+                    </a>
+                </div>
+                <div class="kf_bottom">
+                    <img src="http://res.zocai.com/Home/RightMenu/images/img_07.png">
+                    <p style=" font-size: 16px; color: #333; font-weight: bold;">扫一扫，有惊喜！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rightmenu">
+        <div class="nr">
+            <div class="rightmenu_top">
+                <a href="javascript:showZocaiKefu();" style="display: block;">
+                    <img src="http://res.zocai.com/Home/RightMenu/images/img_01.png"><br>
+                    <span>
+                        在线<br>客服
+                    </span>
+                    <em class="labeleft"></em>
+                    <em class="laberight"></em>
+                </a>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="li1 "></a>
+                        <span class="transition">预约门店</span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="li2 "></a>
+                        <span class="transition">购物车</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="li3"></a>
+                        <span class="transition" style="height: auto;line-height: 20px;">
+                            <img src="http://res.zocai.com/Home/RightMenu/images/img_04_active2.png" style="display: inline-block;margin: 5px;line-height: 16px;">
+                            扫扫有惊喜
+                        </span>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="li4" id="backToTopTxt"></a>
+                        <span class="transition" style="background: #e2f2ff; color:#333;">返回顶部</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".rightmenu .center li").mouseenter(function () {
+            var $t = $(this);
+            $t.addClass("active");
+            $t.find("span").animate({ right: '64px', opacity: 1 }, 500).show()
+        }).mouseleave(function () {
+            var $t = $(this);
+            $(this).removeClass("active");
+            $t.find("span").animate({ right: '0px', opacity: 0 }, 500).hide()
+        });
+        $("#backToTopTxt").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 520);
+        });
+        ///打开客服
+        function showZocaiKefu() {
+            $("#zocaikefu").show();
+            $("#zocaikefu_blocker").show();
+            $("#zocaikefu_colse").click(function () {
+                $("#zocaikefu").hide();
+                $("#zocaikefu_blocker").hide();
+            });
+            $("#zocaikefu_blocker").click(function () {
+                $("#zocaikefu").hide();
+                $("#zocaikefu_blocker").hide();
+            });
+        }
+    </script>
+        <script type="text/javascript">
+            $(function () {
+              
+                $("#menuLeyu li img").each(function (index) {
+                    $(this).hover(function () {
+                        if (index == 3) {
+                            $("#weima").show();
+                        } else {
+                            $(this).attr("src", GlobalVal.__routeRes + "/Global/pc/2015/leyu/images/lt_0" + (index + 1) + "_1.gif");
+                        }
+    
+                    }, function () {
+                        if (index == 3) {
+                            $("#weima").hide();
+                        } else {
+                            $(this).attr("src", GlobalVal.__routeRes + "/Global/pc/2015/leyu/images/lt_0" + (index + 1) + ".gif");
+                        }
+    
+                    });
+                });
+                $.getJSON(GlobalVal.__routeHome + "/home/GetAllReserationCity?callback=?", {}, function (json) {
+                    if (json.success) {
+                        $("#drop_nav_contentt").html(json.message);
+                    } else {
+                        alert(json.message);
+                    }
+    
+                });
+            });
+        </script>
+    
+    
+        <script type="text/javascript">
+            var Detail = { Code: "W00232-W-RD-4" };
+            var signprice = "7660.00";
+            var rate = parseFloat("100.00");
+            var msize = parseInt("16");
+        </script>
+        <script type="text/javascript" src="http://res.zocai.com/Scripts/Lib/jQuery.SmartFloat.js"></script>
+        <script src="http://res.zocai.com/WMRes/2017/tool/jquery_lazyload/jquery.lazyload.min.js"></script>
+        <script type="text/javascript" src="http://res.zocai.com/Scripts/Lib/cloud-zoom.1.0.2.js"></script>
+        <script src="http://res.zocai.com/Scripts/Lib/WdatePicker.js" type="text/javascript"></script>
+        <script src="http://res.zocai.com/Scripts/Lib/jQuery.EbQueryString.js" type="text/javascript"></script>
+        <script src="http://res.zocai.com/Scripts/Lib/jQuery.livequery.js" type="text/javascript"></script>
+        <script src="http://res.zocai.com/Scripts/Lib/jquery.form.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://res.zocai.com/Home/product/detail/2015/js/detail.js"></script>
+        <script src="http://res.zocai.com/Home/Store/2015/bespoke/scripts/Bespoke.js" type="text/javascript"></script>
+        <script src="http://res.zocai.com/WMRes/2017/tool/layui.v2.2.5/layui.js"></script>
+        <script src="http://res.zocai.com/WMRes/2017/tool/fenqile.repay.light.1.0.4.js"></script>
+        <script type="text/javascript">
+            layui.use(['layer', 'laytpl'], function () {
+                var laytpl = layui.laytpl;
+                window.showimg = function (id, index) {
+                    layer.open({
+                        type: 2,
+                        title: false,
+                        closeBtn: 0, //不显示关闭按钮
+                        shadeClose: true,
+                        shift: 2,
+                        maxmin: false, //开启最大化最小化按钮
+                        area: ['893px', '600px'],
+                        content: ["/product/showimg/" + id + '?i=' + index, 'no']
+                    })
+                }
+                $("#fenqil_on").click(function () {
+                    var price = parseFloat($("#Price").val());
+                    var repayMonCalVOMap = RepayFundUtil.getSimpleFixedPaymentMap(price, false);             
+                    laytpl(fenqil_onTpl.innerHTML).render(repayMonCalVOMap, function (html) {
+                                                           
+                        layer.open({
+                            type: 1,
+                            title: false,
+                            closeBtn: 0, //不显示关闭按钮
+                            shadeClose: true,
+                            shift: 2,
+                            maxmin: false, //开启最大化最小化按钮
+                            area: ['693px'],
+                            content: html
+                        });
+                    });
+                });
+                $("#fenqil_discount").click(function () {
+                    var t = this;
+                    layer.tips('<sapn>新用户订单金额3000内，免息。</sapn><br/><sapn>新用户订单金额大于3000，费率5折。</sapn>', t, {
+                        tips: [2, "#f44336"],
+                        time: 2000
+                    });
+                });
+            });
+            $(function () {
+                $(".commodity img").lazyload({ effect: "fadeIn", placeholder: "http://res.zocai.com/WMRes/2017/tool/loging/tail-spin.svg" });
+                searchFeedBack('W00232-W-RD-4', 1, true);
+            });
+        </script>
+        
+        <script>
+            (function (a, h, c, b, f, g) { a["UdeskApiObject"] = f; a[f] = a[f] || function () { (a[f].d = a[f].d || []).push(arguments) }; g = h.createElement(c); g.async = 1; g.charset = "utf-8"; g.src = b; c = h.getElementsByTagName(c)[0]; c.parentNode.insertBefore(g, c) })(window, document, "script", "http://assets-cli.udesk.cn/im_client/js/udeskApi.js", "ud");
+            ud({
+                "code": "21dkhh6k",
+                "link": "http://zocai.udesk.cn/im_client/?web_plugin_id=38627"
+            });
+        </script>
+            <script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2693512801308ae7396f9c24a8dd6edc";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script>
+                (function () {
+                    var bp = document.createElement('script');
+                    bp.src = '//push.zhanzhang.baidu.com/push.js';
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+    
+    
+    
+    </div>
+
+    <!--  -->
+    <div id="bsBox" class="bsBox">
+        <div class="bsClose">X</div>
+        <div class="bsTop">
+            <div class="bsReturn">选择其他平台 &gt;&gt;</div>
+            <span style="margin-left:15px;">分享到</span>
+            <span class="bsPlatName"></span>
+        </div>
+        <div class="bsFrameDiv">
+            <iframe class="bShareFrame" name="bsFrame338" frameborder="0" scrolling="no" allowtransparency="true">
+
+            </iframe>
+        </div>
+        <div id="bsMorePanel" style="display: none;">
+    </div></div>
+    <!--  -->
+    <div id="udesk_container">
+        <div id="udesk_btn">
+            <a style="display: block; position: fixed; box-sizing: border-box; font-size: 13px; color: rgb(255, 255, 255); text-align: center; cursor: pointer; text-decoration: none; z-index: 1000000000; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.1); border-right-color: rgba(0, 0, 0, 0.1); border-left-color: rgba(0, 0, 0, 0.1); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; background-color: rgb(87, 123, 181); height: 40px; right: 0px; bottom: 0px; margin: 3px 3px 5px;">
+                <span style="display:block;float:left;width:24px;height:24px;margin:7px 7px 0;"><img src="http://static-ud.udesk.cn/img/msg2@68x66.png" style="width:100%;height:100%;">
+                </span>
+                <span style="display:block;float:left;width:1px;height:100%;background-color:rgba(0, 0, 0, .08);vertical-align:middle;background-color:#0009;filter:alpha(opacity=10);">
+                </span>
+                <span id="udesk_btn_text" style="display:block;float:left;height:40px;margin:0 10px;line-height:40px;overflow-y:hidden; font-size: 13px; color: #fff;">咨询珠宝顾问</span>
+                <span id="udesk_btn_circle" style="display:none;position:absolute;top:-13px;right:-13px;width:26px;height:26px;text-align:center;line-height:26px;font-size:14px;color:#fff;border-radius:15px;background-color: #ff3b30;"></span>
+            </a>
+        </div>
+        <div id="udesk_panel" style="position:fixed;bottom:-574px;right:60px;z-index:-1;width:364px;height:572px;overflow:hidden;display:none;background-color:transparent;box-shadow:0px 4px 12px 0px rgba(8,23,26,0.2);border-radius: 3px 3px 0px 0px;-webkit-overflow-scrolling:touch;border:1px solid #ddd9;transition:bottom 0.3s;-webkit-transition:bottom 0.3s;-moz-transition:bottom 0.3s;-ms-transition:bottom 0.3s;-o-transition:bottom 0.3s;">
+            <iframe id="udesk_iframe" frameborder="0" scrolling="no" allowtransparency="true" style="width:1px;min-width:100%;*width:100%;height:0;border:none;padding:0;margin:0;float:none;background:none;transition:height 0.1s;-webkit-transition:height 0.1s;-moz-transition:height 0.1s;-ms-transition:height 0.1s;-o-transition:height 0.1s;" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="http://zocai.udesk.cn/im_client/?web_plugin_id=38627&amp;cur_title=%E3%80%90%E6%8C%9A%E7%88%B1%E3%80%91PT950%E9%93%82%E9%87%9130%E5%88%86%2F0.3%E5%85%8B%E6%8B%89%E9%92%BB%E7%9F%B3%E5%A5%B3%E5%A3%AB%E6%88%92%E6%8C%87%E5%A4%9A%E5%B0%91%E9%92%B1_%E5%9B%BE%E7%89%87_%E6%AC%BE%E5%BC%8F(%E9%A2%9C%E8%89%B2%3AD-E%2C%E5%87%80%E5%BA%A6%3AVS%2C%E5%88%87%E5%B7%A5%3AVG)-%E4%BD%90%E5%8D%A1%E4%BC%8A&amp;src_url=http%3A%2F%2F127.0.0.1%3A5500%2Fproject%2Findex.html&amp;cur_url=http%3A%2F%2Fwww.zocai.com%2Fpdetail%2Fw00232-w-rd-4.html&amp;pre_url=http%3A%2F%2Fwww.zocai.com%2Fhelp%2Fauthentication&amp;currentMode=inner&amp;_INVITE_USER_KEY=88f4a2f7-f824-4fc1-b556-25c20668b29c">
+            </iframe>
+        </div>
+        <div id="udesk_pop_dialog" style="display: block;"><div class="udesk_btn_chat" style="position: fixed; z-index: 1000000001; font-size: 14px; word-break: break-all; overflow-wrap: break-word; line-height: 20px; box-sizing: border-box; box-shadow: rgb(238, 238, 238) 1px 1px 8px; border: 1px solid rgb(238, 238, 238); padding: 10px 25px 10px 45px; color: rgb(136, 136, 136); cursor: pointer; background-color: rgb(255, 255, 255); transition: margin 0.3s linear 0s; min-width: 250px; max-width: 300px; top: 563px; left: 1121px; margin-top: -88px; margin-left: -148px;">    
+            <img src="http://zocai.udesk.cn/im_client/images/default_head.png" style="position:absolute;left:8px;width:24px;height:24px;border-radius:12px;-webkit-border-radius:12px;-moz-border-radius:12px;-ms-border-radius:12px;-o-border-radius:12px;">    
+            <b style="font-size:16px;color:#666;">金牌顾问</b>    
+            <div style="margin-left:-25px;margin-top:6px;">欢迎来到佐卡伊，有什么可以帮到您？</div>    <a class="udesk_btn_close" style="position:absolute;right:6px;top:6px;font-size:18px;cursor:pointer;color:#bbb;text-decoration:none;">×</a>
+            <b style="position: absolute; border-width: 10px 10px 0px; border-style: solid; border-color: rgb(238, 238, 238) transparent transparent; border-image: initial; left: 50%; margin-left: -11px; bottom: -10px;">
+                <b style="position: absolute; border-width: 8px 8px 0px; border-style: solid; border-color: rgb(255, 255, 255) transparent transparent; border-image: initial; margin-left: -8px; bottom: 2px;"></b>
+            </b>
+        </div>
+    </div>
+</div>
+<!--  -->
+<iframe src="http://static.bshare.cn/cm.html?cid=2020082216421200072112700115416189&amp;m=8,11,12,13,14,17,16,19,18,21,20,23,25,24,27,26" style="display: none;">
+</iframe>
+<!--  -->
+<div id="bsPanelHolder">
+    <div id="bsPanel" style="display:none;">
+        <div class="bsTitle">
+                <a style="float:left;height:20px;line-height:20px;font-weight:bold;" class="bsSiteLink" target="_blank" href="http://www.bshare.cn/intro">分享到</a><a class="bsSiteLink" style="cursor:pointer;float:right;height:20px;line-height:20px;font-weight:bold;" onclick="document.getElementById('bsPanel').style.display='none';">X</a><div class="bsClear"></div></div><div class="bsClear"></div><div style="padding-left:8px;background:#fff;*height:244px;"><div style="height:47px;border-bottom:1px #ccc solid;padding:4px 0 4px 16px;margin-right:8px;_padding-left:12px;"><div class="bsRlogo" onmouseover="javascript:this.className='bsRlogoSel'" onmouseout="javascript:this.className='bsRlogo'"><a href="javascript:;" onclick="javascript:bShare.share(event,'weixin');return false;" style="text-decoration:none;line-height:120%;"><div style="cursor:pointer;width:24px;height:24px;margin:0 18px 2px;background:url(http://static.bshare.cn/frame/images//logos/m2/weixin.gif) no-repeat;"></div><div style="cursor:pointer;text-align:center;width:60px;height:16px !important;overflow:hidden;color:inherit;white-space:nowrap;line-height:120% !important">微信</div></a></div><div class="bsRlogo" onmouseover="javascript:this.className='bsRlogoSel'" onmouseout="javascript:this.className='bsRlogo'"><a href="javascript:;" onclick="javascript:bShare.share(event,'sinaminiblog');return false;" style="text-decoration:none;line-height:120%;"><div style="cursor:pointer;width:24px;height:24px;margin:0 18px 2px;background:url(http://static.bshare.cn/frame/images//logos/m2/sinaminiblog.gif) no-repeat;"></div><div style="cursor:pointer;text-align:center;width:60px;height:16px !important;overflow:hidden;color:inherit;white-space:nowrap;line-height:120% !important">新浪微博</div></a></div><div class="bsRlogo" onmouseover="javascript:this.className='bsRlogoSel'" onmouseout="javascript:this.className='bsRlogo'"><a href="javascript:;" onclick="javascript:bShare.share(event,'qzone');return false;" style="text-decoration:none;line-height:120%;"><div style="cursor:pointer;width:24px;height:24px;margin:0 18px 2px;background:url(http://static.bshare.cn/frame/images//logos/m2/qzone.gif) no-repeat;"></div><div style="cursor:pointer;text-align:center;width:60px;height:16px !important;overflow:hidden;color:inherit;white-space:nowrap;line-height:120% !important">QQ空间</div></a></div></div><div class="bsLogoLink"><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="QQ好友" onclick="javascript:bShare.share(event,'qqim');return false;" style="background:url(http://static.bshare.cn/frame/images//logos/s4/qqim.png) no-repeat;">QQ好友</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="腾讯微博" onclick="javascript:bShare.share(event,'qqmb');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1512px;">腾讯微博</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="一键通" onclick="javascript:bShare.share(event,'bsharesync');return false;" style="color:red;background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -288px;">一键通</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="搜狐微博" onclick="javascript:bShare.share(event,'sohuminiblog');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1800px;">搜狐微博</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="天涯" onclick="javascript:bShare.share(event,'tianya');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1890px;">天涯</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="凤凰微博" onclick="javascript:bShare.share(event,'ifengmb');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -918px;">凤凰微博</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="朋友网" onclick="javascript:bShare.share(event,'qqxiaoyou');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1548px;">朋友网</a></div></div><div class="bsLogoLink"><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="新华微博" onclick="javascript:bShare.share(event,'xinhuamb');return false;" style="color:red;background:url(http://static.bshare.cn/frame/images//logos/s4/xinhuamb.png) no-repeat;">新华微博</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="百度空间" onclick="javascript:bShare.share(event,'baiduhi');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -144px;">百度空间</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="手机快传" onclick="javascript:bShare.share(event,'189share');return false;" style="background:url(http://static.bshare.cn/frame/images//logos/s4/189share.png) no-repeat;">手机快传</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="人人网" onclick="javascript:bShare.share(event,'renren');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1674px;">人人网</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="手机" onclick="javascript:bShare.share(event,'shouji');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1710px;">手机</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="网易微博" onclick="javascript:bShare.share(event,'neteasemb');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1332px;">网易微博</a></div><div class="bsLogo" onmouseover="javascript:this.className='bsLogoSel'" onmouseout="javascript:this.className='bsLogo'"><a href="javascript:;" title="开心网" onclick="javascript:bShare.share(event,'kaixin001');return false;" style="background:url(http://static.bshare.cn/frame/images//slogos_sprite8.png) no-repeat 0 -1008px;">开心网</a></div></div><div class="bsClear"></div></div><div style="height:20px;line-height:20px;padding:0 8px;border-top:1px solid #e8e8e8;color:#666;background:#f2f2f2;"><div class="buzzButton" style="float:left;">更多平台... <font style="font-weight:normal;">(133)</font></div><div id="bsPower" style="float:right;text-align:right;overflow:hidden;height:100%;"><a class="bsSiteLink" style="font-size:10px;vertical-align:text-bottom;line-height:24px;cursor:pointer;" href="http://www.bshare.cn" target="_blank"><span style="font-size:10px;vertical-align:text-bottom;">
+                    <span style="color:#f60;">b</span>Share</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <script type="text/javascript">
+        $(".rightmenu .center li").mouseenter(function () {
+            var $t = $(this);
+            $t.addClass("active");
+            $t.find("span").animate({ right: '64px', opacity: 1 }, 500).show()
+        }).mouseleave(function () {
+            var $t = $(this);
+            $(this).removeClass("active");
+            $t.find("span").animate({ right: '0px', opacity: 0 }, 500).hide()
+        });
+        $("#backToTopTxt").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 520);
+        });
+        ///打开客服
+        function showZocaiKefu() {
+            $("#zocaikefu").show();
+            $("#zocaikefu_blocker").show();
+            $("#zocaikefu_colse").click(function () {
+                $("#zocaikefu").hide();
+                $("#zocaikefu_blocker").hide();
+            });
+            $("#zocaikefu_blocker").click(function () {
+                $("#zocaikefu").hide();
+                $("#zocaikefu_blocker").hide();
+            });
+        }
+    </script>
+    
+        <script type="text/javascript">
+            $(function () {
+                $("#backToTopTxt").click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 120);
+                });
+                $("#menuLeyu li img").each(function (index) {
+                    $(this).hover(function () {
+                        if (index == 3) {
+                            $("#weima").show();
+                        } else {
+                            $(this).attr("src", GlobalVal.__routeRes + "/Global/pc/2015/leyu/images/lt_0" + (index + 1) + "_1.gif");
+                        }
+    
+                    }, function () {
+                        if (index == 3) {
+                            $("#weima").hide();
+                        } else {
+                            $(this).attr("src", GlobalVal.__routeRes + "/Global/pc/2015/leyu/images/lt_0" + (index + 1) + ".gif");
+                        }
+    
+                    });
+                });
+                $.getJSON(GlobalVal.__routeHome + "/home/GetAllReserationCity?callback=?", {}, function (json) {
+                    if (json.success) {
+                        $("#drop_nav_contentt").html(json.message);
+                    } else {
+                        alert(json.message);
+                    }
+    
+                });
+            });
+        </script>
+    
+    
+        <script type="text/javascript">
+            var returnurl = "http://passport.zocai.com/member";
+            $(function () {
+                $("#imgcode").click(function () {
+                    $("#imgcode").attr("src", "http://passport.zocai.com/Service/CheckCode?tag=m&" + new Date().getTime())
+                });
+            })
+        </script>
+        <script type="text/javascript" src="http://res.zocai.com/Passport/register/2016/js/register.js"></script>
+        
+        <script>
+            (function (a, h, c, b, f, g) { a["UdeskApiObject"] = f; a[f] = a[f] || function () { (a[f].d = a[f].d || []).push(arguments) }; g = h.createElement(c); g.async = 1; g.charset = "utf-8"; g.src = b; c = h.getElementsByTagName(c)[0]; c.parentNode.insertBefore(g, c) })(window, document, "script", "http://assets-cli.udesk.cn/im_client/js/udeskApi.js", "ud");
+            ud({
+                "code": "21dkhh6k",
+                "link": "http://zocai.udesk.cn/im_client/?web_plugin_id=38627"
+            });
+        </script>
+            <script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2693512801308ae7396f9c24a8dd6edc";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script>
+                (function () {
+                    var bp = document.createElement('script');
+                    bp.src = '//push.zhanzhang.baidu.com/push.js';
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(bp, s);
+                })();
+            </script>
+    <script type="text/javascript">
+        $(".header_right .drop_nav").each(function () {
+            var dropContent = $(this).siblings(".drop_nav_content");
+            dropContent.css({ "margin-top": 30 });
+            dropContent.children(".drop_nav_content_top").css({ left: $(this).width() / 2 });
+            $(this).parent().hover(function () { dropContent.show(); }, function () { dropContent.hide(); });
+        });
+        $(".newnav_nr .drop_nav").each(function () {
+            var dropContent = $(this).siblings(".drop_nav_content");
+            dropContent.css({ "margin-top": 40 });
+            dropContent.children(".drop_nav_content_top").css({ left: $(this).width() / 2 });
+            $(this).parent().hover(function () { dropContent.show(); }, function () { dropContent.hide(); });
+        });
+    </script>
+</body>
+</html>
